@@ -2,29 +2,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>Non-members</title>
+        <title>Member</title>
     </head>
     <body>
         <main>
-            <h1>Non-members</h1>
+            <h1>Member</h1>
             <h2>Rule</h2>
-            <p><strong>Non-member variable or function names MUST be in <code>snake_case</code>.</strong></p>
+            <p><strong>Member variable (field) or function (method) names MUST be in <code>camelCase</code>.</strong></p>
             <h2>Explanation</h2>
             <p>
-                All variables or functions outside an object must be in <code>snake_case</code>.
-                These includes global variables, local variables, name space variables, function parameters, etc.
-            </p>
-            <p>
-                <strong>Exception:</strong> Constructor parameters assigned to member fields directly may use <code>camelCase</code>.
+                All member variables and functions inside an object must be in <code>camelCase</code>.
             </p>
             <h2>Language-specific notes</h2>
             <h3>C / C++</h3>
             <p>
-                This rule applies to non-member constants as well in addition to variables and functions,
+                This rule applies to member constants as well in addition to variables and functions,
                 because <code>SCREAMING_SNAKE_CASE</code> is reserved for macros.
-            </p>
-            <p>
-                This rule also applies to non-type template parameters as well.
             </p>
             <h3>Javascript</h3>
             <p>
