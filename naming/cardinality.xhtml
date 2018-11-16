@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Cardinality of names</title>
+    </head>
+    <body>
+        <main>
+            <h1>Cardinality of names</h1>
+            <h2>Rule</h2>
+            <p><strong>A singular name MUST be used for a single object, while a plural name MUST be used for an array or collection.</strong></p>
+            <h2>Explanation</h2>
+            <p>
+                The cardinality of the name must match the object. A singular name represents the object itself,
+                while a plural name represents a collection of objects of the same type.
+            </p>
+            <h2>Examples</h2>
+            <table>
+                <tr><th>Single object</th><th>Collection</th></tr>
+                <tr><td>person</td><td>people</td></tr>
+                <tr><td>cat</td><td>cats</td></tr>
+                <tr><td>TV</td><td>TVs</td></tr>
+            </table>
+            <h2>Language-specific notes</h2>
+            <h3>SQL</h3>
+            <p>
+                Due to object-relational mapping, table names in database are considered class names
+                and column names are considered member variable names.
+                Therefore, singular form in <code>PascalCase</code> is used for database tables.
+            </p>
+        </main>
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            <br />
+            This work is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+    </body>
+</html>
