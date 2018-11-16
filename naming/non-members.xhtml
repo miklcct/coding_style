@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Non-members</title>
+    </head>
+    <body>
+        <main>
+            <h1>Non-members</h1>
+            <h2>Rule</h2>
+            <p><strong>Non-member variable or function names MUST be in <code>snake_case</code>.</strong></p>
+            <h2>Explanation</h2>
+            <p>
+                All variables or functions outside an object must be in <code>snake_case</code>.
+                These includes global variables, local variables, name space variables, function parameters, etc.
+            </p>
+            <p>
+                <strong>Exception:</strong> Constructor parameters assigned to member fields directly may use <code>camelCase</code>.
+            </p>
+            <h2>Language-specific notes</h2>
+            <h3>C / C++</h3>
+            <p>
+                This rule applies to non-member constants as well in addition to variables and functions,
+                because <code>SCREAMING_SNAKE_CASE</code> is reserved for macros.
+            </p>
+            <p>
+                This rule also applies to non-type template parameters as well.
+            </p>
+            <h3>Javascript</h3>
+            <p>
+                If the member function is intended to be used as a constructor, the rule for types instead of this applies.
+            </p>
+        </main>
+        <footer>
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            <br />
+            This work is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </footer>
+    </body>
+</html>
