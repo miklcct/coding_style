@@ -25,11 +25,17 @@
             </p>
             <h3>PHP</h3>
             <p>
-                This rule also applies to built-in constants <code>TRUE</code>, <code>FALSE</code> and <code>NULL</code>.
+                Although <code>TRUE</code>, <code>FALSE</code> and <code>NULL</code> are predefined constants,
+                <code>true</code>, <code>false</code> and <code>null</code> are also reserved words which are case-insensitive.
+                They are resolved at compiled time rather than runtime like magic constants.
+                Therefore, they MUST be specified using lower case as <code>true</code>, <code>false</code> and <code>null</code>.
             </p>
             <p>
-                The word <code>class</code> in expression <code>::class</code> to get the fully qualified class name
-                is not a constant, but rather a key word. Therefore it must be typed in lower case.
+                Magic constants, which are resolved at compiled time rather than runtime, are case insensitive.
+                They are actually not constants which cannot be accessed via <code>defined()</code> and
+                do not appear in <code>get_defined_constants()</code>.
+                These MUST be specified using the case
+                <a href="https://www.php.net/manual/en/language.constants.magic.php">listed in the manual</a>.
             </p>
             <h3>Haskell</h3>
             <p>
